@@ -32,7 +32,7 @@ export SAUCE_ACCESS_KEY=*******
 ```
 
 ## Execution
-Executing a test from this repository is a matter of running `runner-ex{number}.sh` where `{number}` is the number of the example (1 ... 4).
+Executing a test from this repository is a matter of running `runner-ex{number}.sh` where `{number}` is the number of the example (1 ... 4).  Make sure to navigate to the emulators directory you made a copy of
 
 If you run this for the first time on your Mac you might get a warning that the `sauce-runner-virtual` is not safe,
 then go to
@@ -46,6 +46,8 @@ see the image below.
 ## Examples
 There are 6 examples provided starting from the most basic and moving up to more advanced approaches. 
 More options can be found on the [Sauce Labs Wiki](https://wiki.saucelabs.com/display/DOCS/Command+Reference+for+Sauce+Runner+for+Virtual+Devices).
+
+> Note that you need to have the devices available on the same data center (EU-Central) and append a `./` before each command such as `./runner-ex1.sh`
 
 ### Example 1 - Configuration for all tests
 `runner-ex1.sh`: In this example, all test cases are executed on a single emulator in sequential order.
